@@ -1,0 +1,37 @@
+body {
+    background-color: #cad2c5;
+    color: black;
+    font-family: "Roboto Slab", serif;;
+}
+
+header {
+    background-color: #84a98c;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+main {
+    background-color: #ebebeb;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+h1, h2 {
+    color: #000000;
+}
+footer {
+    background-color: #84a98c;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+a {
+    color: #2b59c3;
+    text-decoration: none;
+    font-weight: bold;
+}
