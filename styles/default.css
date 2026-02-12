@@ -12,7 +12,7 @@ header {
 }
 
 main {
-    background-color: #c6878f;
+    background-color: #C4F5FC;
     margin: 30px;
     border-radius: 20px;
     padding: 10px;
@@ -46,4 +46,9 @@ p {
 }
 img {
     border-radius: 15px;
+}
+
+#wel {
+    color: #6b5ca5;
+    font-size: 1.5em;
 }
