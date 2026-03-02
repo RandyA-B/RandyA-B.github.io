@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #226F54;
+    color: beige;
+
+}
+
+
+header {
+    background-color: #1B4D3E;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1B4D3E;
+    padding: 10px;
+    text-align: center;
+    color: beige;
+}
+
+.contact {
+    background-color: #1B4D3E;
+    padding: 20px;
+    text-align: center;
+    color: beige;
+    list-style-type: none;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
