@@ -1,0 +1,154 @@
+body {
+    font-family: "Nova Square", sans-serif;
+    margin: 0px;
+    background-color: #1e293b;
+    line-height: 1.6;
+    color: white;
+}
+
+
+/* Header */
+
+header {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background:#0f172a;
+}
+
+
+/* Navigation */
+
+
+nav a {
+    color: #22c55e;
+    text-decoration: underline;
+    padding: 14px 20px;
+    font-weight:bold;
+    margin:10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+
+nav a:hover {
+    background-color: #778da9;
+}
+
+
+/* Main content */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Sections */
+
+section {
+    background-color: #344e41;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+section:target{
+    display:block;  
+} 
+
+
+/* Headings */
+
+h2 {
+    border-bottom: 2px solid #1f7a3a;
+    padding-bottom: 5px;
+}
+
+
+/* Images */
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: white;
+}
+
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #778da9;
+}
+
+
+/* Lists */
+
+ul, ol {
+    margin-top: 10px;
+}
+
+
+/* Forms */
+
+form {
+    margin-top: 15px;
+}
+
+select, input[type="submit"] {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #1f7a3a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #155c2b;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
