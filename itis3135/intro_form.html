@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information Form</title>
+    <script
+      src="https://lint.page/kit/4d0fe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/intro_form.css" />
+  </head>
+  <body>
+    <div data-include="components/header.html"></div>
+    <main>
+      <h3>Please submit the form below.</h3>
+      <form id="introForm">
+        <!-- Name Section -->
+        <fieldset>
+          <legend>Name</legend>
+          <label>
+            First Name (Required):
+            <input
+              type="text"
+              name="firstName"
+              placeholder="Enter your first name"
+              value="Randy"
+              required
+            />
+          </label>
+          <label>
+            Middle Name/Initial (Optional):
+            <input
+              type="text"
+              name="middleName"
+              placeholder="Enter your middle name or initial"
+              value="A"
+            />
+          </label>
+          <label>
+            Nickname/Preferred Name (Optional):
+            <input
+              type="text"
+              name="nickname"
+              placeholder="Enter your nickname"
+              value=""
+            />
+          </label>
+          <label>
+            Last Name (Required):
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Enter your last name"
+              value="Brown"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Acknowledgment Section -->
+        <fieldset>
+          <legend>Acknowledgment</legend>
+          <label>
+            Acknowledgment Statement (Required):
+            <input
+              type="text"
+              name="acknowledgmentStatement"
+              placeholder="Enter acknowledgment statement"
+              value="I, Randy Brown, am a student in ITIS 3135"
+              required
+            />
+          </label>
+          <label>
+            Acknowledgment Date (Required):
+            <input
+              type="date"
+              name="acknowledgmentDate"
+              value="2026-03-22"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Mascot Section -->
+        <fieldset>
+          <legend>Mascot Definition</legend>
+          <label>
+            Mascot Adjective (Required):
+            <input
+              type="text"
+              name="mascotAdjective"
+              placeholder="e.g., Poised"
+              value="Poised"
+              required
+            />
+          </label>
+          <label>
+            Mascot Animal (Required):
+            <input
+              type="text"
+              name="mascotAnimal"
+              placeholder="e.g., Panther"
+              value="Panther"
+              required
+            />
+          </label>
+          <label>
+            Divider Character (Required):
+            <input
+              type="text"
+              name="divider"
+              placeholder="e.g., |, ~, ♥️"
+              value="|"
+              required
+              maxlength="5"
+            />
+          </label>
+        </fieldset>
+
+        <!-- Picture Section -->
+        <fieldset>
+          <legend>Picture</legend>
+          <label>
+            Picture URL (Required):
+            <input
+              type="file"
+              name="pictureUrl"
+              placeholder="Enter image URL"
+              value=""
+              required
+            />
+          </label>
+          <label>
+            <img
+              src="images/introIMG.jpg"
+              alt="Photo of Randy Brown"
+              class="img"
+            />
+            <figcaption>Photo of Randy Brown</figcaption>
+          </label>
+        </fieldset>
+
+        <!-- Personal Statement -->
+        <fieldset>
+          <legend>Personal Statement</legend>
+          <label>
+            Personal Statement (Required):
+            <textarea
+              name="personalStatement"
+              placeholder="Enter your personal statement"
+              required
+            >
+I'm a sophomore at UNC Charlotte studying Computer Science with a concentration in Cybersecurity. I am excited to learn more about building web applications.</textarea
+            >
+          </label>
+        </fieldset>
+
+        <!-- Main Background Bullets -->
+        <fieldset>
+          <legend>Background Information</legend>
+
+          <label>
+            Personal Background (Required):
+            <textarea
+              name="personalBackground"
+              placeholder="Describe your personal background"
+              required
+            >
+I am going to be 20 years old. I like playing video games and smelling new fragrances.</textarea
+            >
+          </label>
+
+          <label>
+            Professional Background (Required):
+            <textarea
+              name="professionalBackground"
+              placeholder="Describe your professional background"
+              required
+            >
+Currently I am a sales apprentice at Discount Tire, and work at Harris Teeter and a bagger previously.</textarea
+            >
+          </label>
+
+          <label>
+            Academic Background (Required):
+            <textarea
+              name="academicBackground"
+              placeholder="Describe your academic background"
+              required
+            >
+I am a sophomore at UNC Charlotte. I am majoring in computer science with a concentration in cyber security.</textarea
+            >
+          </label>
+
+          <label>
+            Background in Subject (Required):
+            <textarea
+              name="backgroundInSubject"
+              placeholder="Describe your background in the subject"
+              required
+            >
+I know the very little of the fundamentals and basics of cyber security, with very little experience.</textarea
+            >
+          </label>
+
+          <label>
+            Primary Work Computer (Required):
+            <textarea
+              name="primaryComputer"
+              placeholder="Describe your primary work computer"
+              required
+            >
+I just got a new Lenovo Yoga 7i ultra 5 16"</textarea
+            >
+          </label>
+
+          <label>
+            Backup Computer & Location Plan (Required):
+            <textarea
+              name="backupComputer"
+              placeholder="Describe your backup computer and location plan"
+              required
+            >
+I still have my windows HP laptop I can use as a backup.</textarea
+            >
+          </label>
+        </fieldset>
+
+        <!-- Courses Section -->
+        <fieldset>
+          <legend>Courses</legend>
+          <p>Courses I'm Taking, & Why:</p>
+          <div id="coursesContainer">
+            <!-- Courses will be added here -->
+          </div>
+          <button type="button" id="addCourseBtn">Add Course</button>
+        </fieldset>
+
+        <!-- Quote Section -->
+        <fieldset>
+          <legend>Favorite Quote</legend>
+          <label>
+            Quote (Required):
+            <textarea
+              name="quote"
+              placeholder="Enter your favorite quote"
+              required
+            >
+"Be yourself; everyone else is already taken"</textarea
+            >
+          </label>
+          <label>
+            Quote Author (Required):
+            <input
+              type="text"
+              name="quoteAuthor"
+              placeholder="Enter the quote author"
+              value="Oscar Wilde"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Optional Items -->
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label>
+            Funny/Interesting Item (Optional):
+            <textarea
+              name="funnyItem"
+              placeholder="Tell us something funny or interesting"
+            >
+I really like fragrances.</textarea
+            >
+          </label>
+
+          <label>
+            Something I Would Like to Share (Optional):
+            <textarea
+              name="additionalShare"
+              placeholder="Anything else you'd like to share"
+            >
+I was born in Ghana.</textarea
+            >
+          </label>
+        </fieldset>
+
+        <!-- Links Section -->
+        <fieldset>
+          <legend>Links</legend>
+          <label>
+            Link 1 - Label (Required):
+            <input
+              type="text"
+              name="link1Label"
+              placeholder="e.g., GitHub"
+              value="GitHub"
+              required
+            />
+          </label>
+          <label>
+            Link 1 - URL (Required):
+            <input
+              type="url"
+              name="link1Url"
+              placeholder="https://..."
+              value="https://github.com/RandyA-B"
+              required
+            />
+          </label>
+
+          <label>
+            Link 2 - Label (Required):
+            <input
+              type="text"
+              name="link2Label"
+              placeholder="e.g., LinkedIn"
+              value="LinkedIn"
+              required
+            />
+          </label>
+          <label>
+            Link 2 - URL (Required):
+            <input
+              type="url"
+              name="link2Url"
+              placeholder="https://..."
+              value="https://www.linkedin.com/in/randybrowna/"
+              required
+            />
+          </label>
+
+          <label>
+            Link 3 - Label (Required):
+            <input
+              type="text"
+              name="link3Label"
+              placeholder="e.g., freeCodeCamp"
+              value="freeCodeCamp"
+              required
+            />
+          </label>
+          <label>
+            Link 3 - URL (Required):
+            <input
+              type="url"
+              name="link3Url"
+              placeholder="https://..."
+              value="https://www.freecodecamp.org/randyb_panther"
+              required
+            />
+          </label>
+
+          <label>
+            Link 4 - Label (Required):
+            <input
+              type="text"
+              name="link4Label"
+              placeholder="e.g., CLT Website"
+              value="CLT Website"
+              required
+            />
+          </label>
+          <label>
+            Link 4 - URL (Required):
+            <input
+              type="url"
+              name="link4Url"
+              placeholder="https://..."
+              value="https://webpages.charlotte.edu/rbrow214/"
+              required
+            />
+          </label>
+
+          <label>
+            Link 5 - Label (Required):
+            <input
+              type="text"
+              name="link5Label"
+              placeholder="e.g., GitHub Pages"
+              value="GitHub Pages"
+              required
+            />
+          </label>
+          <label>
+            Link 5 - URL (Required):
+            <input
+              type="url"
+              name="link5Url"
+              placeholder="https://..."
+              value="https://RandyA-B.github.io"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <!-- Submit and Reset -->
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Clear Form</button>
+        </div>
+      </form>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+  </body>
+</html>
