@@ -1,12 +1,16 @@
 // Clear Form functionality
 function clearForm() {
   // Clear all text inputs, textareas, and date inputs
-  form.querySelectorAll('input[type="text"], input[type="email"], input[type="url"], input[type="date"], textarea').forEach(field => {
-    field.value = '';
-  });
-  
+  form
+    .querySelectorAll(
+      'input[type="text"], input[type="email"], input[type="url"], input[type="date"], textarea',
+    )
+    .forEach((field) => {
+      field.value = "";
+    });
+
   // Clear file input
-  form.querySelector('input[type="file"]').value = '';
+  form.querySelector('input[type="file"]').value = "";
 }
 
 // Get form elements
