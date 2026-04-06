@@ -37,27 +37,33 @@ a {
     font-weight: bold;
 }
 
-/* .survey-fieldset {
+.survey-fieldset {
+    display: flex;
+    flex-direction: column;
     border: 2px solid #84a98c;
     border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
 }
-
-.survey-main {
-    background-color: #ebebeb;
-    margin: auto;
-    border-radius: 20px;
-    padding: 10px;
-    max-width: 750px;
+.survey-fieldset div {
+    padding: 5px;
 }
 
-.survey-main div {
-    margin-bottom: 15px;
-    display: block;
-
+.survey-fieldset input[type="text"], .survey-fieldset input[type="email"], .survey-fieldset input[type="textarea"] {
+    inline-size: 100%;
 }
 
-.survey-main input {
-    max-width: 100%;
-} */
+.survey-fieldset textarea {
+    inline-size: 100%;
+    height: 100px;
+}
+.survey-fieldset button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #84a98c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+

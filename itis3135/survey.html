@@ -10,7 +10,7 @@
 </head>
 <body>
     <div data-include="components/header.html"></div>
-    <main class="survey-main">
+    <main>
         <h1>Survey</h1>
         <p>How was your stay at the Poised Panther?</p>
 
@@ -48,11 +48,24 @@
                     </div>
                 </div>
                 <div>
-                    <label for="season">Which season would you say is the best time to spend here</label>
+                    <label>Which season would you say is the best time to spend here?</label>
                     <div>
-                        <input type="checkbox" id="season">
-                        <label for="season">Winter</label>
+                        <input type="checkbox" id="season-winter">
+                        <label for="season-winter">Winter</label>
+                        <input type="checkbox" id="season-spring">
+                        <label for="season-spring">Spring</label>
+                        <input type="checkbox" id="season-summer">
+                        <label for="season-summer">Summer</label>
+                        <input type="checkbox" id="season-fall">
+                        <label for="season-fall">Fall</label>
                     </div>
+                </div>
+                <div>
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
                 </div>
             </form>
         </fieldset>
