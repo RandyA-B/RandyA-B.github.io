@@ -14,9 +14,10 @@ header {
 
 main {
     background-color: #ebebeb;
-    margin: 30px;
     border-radius: 20px;
     padding: 10px;
+    max-width: 70%;
+    margin: auto;
 }
 
 h1, h2 {
@@ -36,7 +37,7 @@ a {
     font-weight: bold;
 }
 
-.survey-fieldset {
+/* .survey-fieldset {
     border: 2px solid #84a98c;
     border-radius: 10px;
     padding: 20px;
@@ -59,4 +60,4 @@ a {
 
 .survey-main input {
     max-width: 100%;
-}
+} */
