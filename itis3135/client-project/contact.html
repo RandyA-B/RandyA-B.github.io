@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact – Ross' Recipes</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header id="site-header">
+    <h1>Ross' Recipes</h1>
+</header>
+
+<nav id="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cooking.html">Cooking Recipes</a></li>
+        <li><a href="baking.html">Baking Recipes</a></li>
+        <li><a href="about.html">About the Chef</a></li>
+        <li><a href="contact.html" class="active">Contact / Submit a Recipe</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Contact / Submit a Recipe</h2>
+    <p>Have a recipe idea or suggestion? Send it to Bob!</p>
+
+    <form id="recipe-form">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="recipe">Recipe Idea:</label><br>
+        <textarea id="recipe" name="recipe" rows="5" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <img src="images/placeholder_contact.jpg" alt="Contact Image" class="rounded shadow" width="300">
+</main>
+
+<footer id="site-footer">
+    <p>&copy; 2026 Ross' Recipes</p>
+    <p>
+        <a href="https://validator.w3.org/">HTML Validation</a> |
+        <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a>
+    </p>
+</footer>
+
+</body>
+</html>

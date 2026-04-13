@@ -1,0 +1,150 @@
+/* ===========================
+   Global Styles
+   =========================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #faf7f2; /* warm off-white */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container spacing for all pages */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===========================
+   Header
+   =========================== */
+
+#site-header {
+    background-color: #f2e3d5; /* warm tan */
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 3px solid #d4b59e;
+}
+
+#site-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #5a3e2b; /* chocolate brown */
+}
+
+/* ===========================
+   Navigation Bar
+   =========================== */
+
+#main-nav {
+    background-color: #d4b59e; /* soft brown */
+    padding: 10px 0;
+}
+
+#main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#main-nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#main-nav a:hover {
+    background-color: #b89278;
+}
+
+#main-nav .active {
+    background-color: #8a6b54;
+}
+
+/* ===========================
+   Slideshow
+   =========================== */
+
+.slideshow-container {
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid #d4b59e;
+}
+
+.slide {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: none; /* JS will show one at a time */
+}
+
+.slideshow-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ===========================
+   Section Headings
+   =========================== */
+
+h2 {
+    color: #5a3e2b;
+    border-bottom: 2px solid #d4b59e;
+    padding-bottom: 5px;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+
+#site-footer {
+    background-color: #f2e3d5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 3px solid #d4b59e;
+}
+
+#site-footer a {
+    color: #5a3e2b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Utility Classes
+   =========================== */
+
+.center {
+    text-align: center;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.shadow {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
