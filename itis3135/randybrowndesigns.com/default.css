@@ -1,40 +1,101 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #226F54;
-    color: beige;
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-family: "Zen Dots", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 header {
-    background-color: #1B4D3E;
-    padding: 20px;
+    background-color: #16213e;
     text-align: center;
+    padding: 40px 20px 30px;
+    border-bottom: 3px solid #84a98c;
+}
+
+header img {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #0f3460;
+    margin-bottom: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-title {
+    font-size: 2.2em;
+    color: #84a98c;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.site-subtitle {
+    font-size: 1em;
+    color: #a0b4a8;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 main {
-    padding: 20px;
-    text-align: center;
+    max-width: 760px;
+    margin: 50px auto;
+    padding: 0 24px;
+    flex: 1;
 }
 
-footer {
-    background-color: #1B4D3E;
-    padding: 10px;
-    text-align: center;
-    color: beige;
+main p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    color: #c8d8cc;
+    margin-bottom: 24px;
+}
+
+main ul {
+    margin-bottom: 24px;
+    padding-left: 20px;
+}
+
+main ul li {
+    line-height: 1.9;
+    color: #c8d8cc;
+    padding: 4px 0;
+}
+
+main ul li::marker {
+    color: #84a98c;
 }
 
 .contact {
-    background-color: #1B4D3E;
-    padding: 20px;
-    text-align: center;
-    color: beige;
-    list-style-type: none;
+    list-style: none;
+    padding: 20px 24px;
+    background-color: #16213e;
+    border-left: 4px solid #84a98c;
+    border-radius: 6px;
+    margin-top: 10px;
 }
 
-img {
-    width: 50px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 10px;
+.contact li {
+    padding: 6px 0;
+    color: #b8ccbe;
+    font-size: 0.95em;
+}
+
+footer {
+    background-color: #16213e;
+    border-top: 3px solid #84a98c;
+    text-align: center;
+    padding: 20px;
+    color: #7a9b80;
+    font-size: 0.85em;
 }
