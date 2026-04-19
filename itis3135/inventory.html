@@ -6,13 +6,100 @@
     <title>Randy Brown's Poised Panther | ITIS 3135 | Inventory</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Datatype:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nova+Square&family=Offside&family=Roboto+Slab:wght@100..900&family=Zen+Dots&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div data-include="components/header.html"></div>
     <main>
-        <h1>Inventory</h1>
-        <h2>Welcome to my Inventory page</h2>
+        <h2>Inventory</h2>
+        <hr>         
+        <section class="inventory-section">
+
+            <h4>🎬 Movie Watchlist</h4>
+            
+            <table>
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Genre</th>
+                    <th>Status</th>
+                    <th>Rate</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr class="read">
+                    <td>Interstellar</td>
+                    <td>Christopher Nolan</td>
+                    <td>Sci-Fi</td>
+                    <td><span class="status">Watched</span></td>
+                    <td><span class="rate three" data-rate="three"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="to-read">
+                    <td>Dune: Part Two</td>
+                    <td>Denis Villeneuve</td>
+                    <td>Sci-Fi</td>
+                    <td><span class="status">To Watch</span></td>
+                    <td><span class="rate" data-rate="zero"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="in-progress">
+                    <td>The Godfather</td>
+                    <td>Francis Ford Coppola</td>
+                    <td>Crime</td>
+                    <td><span class="status">Watching</span></td>
+                    <td><span class="rate two" data-rate="two"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="read">
+                    <td>Parasite</td>
+                    <td>Bong Joon-ho</td>
+                    <td>Thriller</td>
+                    <td><span class="status">Watched</span></td>
+                    <td><span class="rate three" data-rate="three"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="to-read">
+                    <td>Oppenheimer</td>
+                    <td>Christopher Nolan</td>
+                    <td>Historical Drama</td>
+                    <td><span class="status">To Watch</span></td>
+                    <td><span class="rate" data-rate="zero"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="in-progress">
+                    <td>Inception</td>
+                    <td>Christopher Nolan</td>
+                    <td>Action / Sci-Fi</td>
+                    <td><span class="status">Watching</span></td>
+                    <td><span class="rate one" data-rate="one"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="read">
+                    <td>Whiplash</td>
+                    <td>Damien Chazelle</td>
+                    <td>Drama</td>
+                    <td><span class="status">Watched</span></td>
+                    <td><span class="rate two" data-rate="two"><span></span><span></span><span></span></span></td>
+                </tr>
+
+                <tr class="to-read">
+                    <td>The Dark Knight</td>
+                    <td>Christopher Nolan</td>
+                    <td>Action</td>
+                    <td><span class="status">To Watch</span></td>
+                    <td><span class="rate" data-rate="zero"><span></span><span></span><span></span></span></td>
+                </tr>
+            </table>
+            <p>
+                This is my movie watchlist, which I use to keep track of movies I want to watch, am currently watching, or have already watched.
+            </p>
+        </section>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.min.js"></script>

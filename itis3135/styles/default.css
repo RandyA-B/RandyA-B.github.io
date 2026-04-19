@@ -1,7 +1,8 @@
 body {
     background-color: #cad2c5;
     color: black;
-    font-family: "Roboto Slab", serif;;
+    font-family: "Offside", sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -23,6 +24,7 @@ main {
 h1, h2 {
     color: #000000;
 }
+
 footer {
     background-color: #84a98c;
     padding: 10px;
@@ -37,6 +39,8 @@ a {
     font-weight: bold;
 }
 
+/* survey section */
+
 .survey-fieldset {
     display: flex;
     flex-direction: column;
@@ -45,6 +49,7 @@ a {
     padding: 20px;
     margin-top: 20px;
 }
+
 .survey-fieldset div {
     padding: 5px;
 }
@@ -57,6 +62,7 @@ a {
     inline-size: 100%;
     height: 100px;
 }
+
 .survey-fieldset button[type="submit"] {
     padding: 10px 20px;
     background-color: #84a98c;
@@ -66,4 +72,164 @@ a {
 }
 
 
+/* card section */
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #84a98c;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card img {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.card p {
+    text-align: right;
+    font-size: 1.5em;
+}
+
+
+/* inventory section */
+
+.inventory-section {
+    margin-top: 20px;
+}   
+
+.inventory-section table {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    overflow: hidden;
+}   
+
+
+.inventory-section th, .inventory-section td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.inventory-section thead {
+    background-color: #84a98c;
+    color: #fff;
+}
+
+.inventory-section tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.inventory-section tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.inventory-section tbody tr:last-of-type {
+    border-bottom: 2px solid #84a98c;
+}
+
+.inventory-section tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.rate {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.rate[data-rate="one"] span:nth-child(1), .rate[data-rate="two"] span:nth-child(-n+2), .rate[data-rate="three"] span {
+    background-color: #00b9ae;
+}
+
+.rate span {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #d6d3d2;
+    flex: 0 0 14px;
+}
+
+.inventory-section p {
+    max-width: 960px;
+    margin: 30px auto;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+
+/* instruction section */
+
+
+.instruction-section {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  margin-top: 1rem;
+}
+
+.instruction-navbar {
+    border-radius: 12px;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    height: fit-content;
+    margin-right: 30px;
+}
+
+
+#inst-nav-header {
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    background: none;
+    padding: 0px;
+    border-radius: 0px;
+    text-align: left;
+    text-decoration-thickness: 100%;
+}
+
+.nav-link {
+    display: block;
+    margin: 10px 0;
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+code {
+  display: block;
+  background-color: #eee;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
 
