@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cooking Recipes – Skinners's' Recipes</title>
+    <title>Cooking Recipes – Skinner's Recipes</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -10,7 +10,7 @@
 <body>
 
 <header id="site-header">
-    <h1>Skinners's' Recipes</h1>
+    <h1>Skinner's Recipes</h1>
 </header>
 
 <nav id="main-nav">
@@ -25,35 +25,47 @@
 
 <main>
     <h2>Cooking Recipes</h2>
-    <p>Explore Ian’s favorite cooking recipes, organized into simple categories.</p>
+    <p class="page-intro">Explore Ian's favorite cooking recipes, organized into simple categories.</p>
 
-    <section>
-        <h3>Meat</h3>
-        <img src="images/placeholder_meat.jpg" alt="Meat Dish" class="rounded shadow" width="300">
-        <p>Hearty and flavorful dishes featuring beef, pork, and more.</p>
-    </section>
+    <div class="recipe-grid">
 
-    <section>
-        <h3>Poultry</h3>
-        <img src="images/placeholder_poultry.jpg" alt="Poultry Dish" class="rounded shadow" width="300">
-        <p>Chicken and turkey recipes perfect for any night of the week.</p>
-    </section>
+        <section class="recipe-card">
+            <img src="images/placeholder_meat.webp" alt="Meat Dish" class="rounded shadow">
+            <div class="recipe-card-body">
+                <h3>Meat</h3>
+                <p>Hearty and flavorful dishes featuring beef, pork, and more. From slow-cooked roasts to quick weeknight stir-fries.</p>
+            </div>
+        </section>
 
-    <section>
-        <h3>Soups & Stews</h3>
-        <img src="images/placeholder_soup.jpg" alt="Soup Dish" class="rounded shadow" width="300">
-        <p>Warm, comforting bowls of goodness.</p>
-    </section>
+        <section class="recipe-card">
+            <img src="images/placeholder_poulrty.jpg" alt="Poultry Dish" class="rounded shadow">
+            <div class="recipe-card-body">
+                <h3>Poultry</h3>
+                <p>Chicken and turkey recipes perfect for any night of the week. Grilled, baked, or sautéed — there's something for everyone.</p>
+            </div>
+        </section>
 
-    <section>
-        <h3>Miscellaneous</h3>
-        <img src="images/placeholder_misc.jpg" alt="Misc Dish" class="rounded shadow" width="300">
-        <p>Everything else that doesn’t fit neatly into a category.</p>
-    </section>
+        <section class="recipe-card">
+            <img src="images/placeholder_soup.jpg" alt="Soup Dish" class="rounded shadow">
+            <div class="recipe-card-body">
+                <h3>Soups &amp; Stews</h3>
+                <p>Warm, comforting bowls of goodness. Perfect for cold days or when you need something simple and satisfying.</p>
+            </div>
+        </section>
+
+        <section class="recipe-card">
+            <img src="images/placeholder_misc.jpg" alt="Misc Dish" class="rounded shadow">
+            <div class="recipe-card-body">
+                <h3>Miscellaneous</h3>
+                <p>Everything else that doesn't fit neatly into a category — sides, pastas, and Ian's personal experiments.</p>
+            </div>
+        </section>
+
+    </div>
 </main>
 
 <footer id="site-footer">
-    <p>&copy; 2026 Skinners's' Recipes</p>
+    <p>&copy; 2026 Skinner's Recipes</p>
     <p>
         <a href="https://validator.w3.org/">HTML Validation</a> |
         <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a>

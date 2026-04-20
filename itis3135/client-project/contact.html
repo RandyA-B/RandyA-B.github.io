@@ -10,7 +10,7 @@
 <body>
 
 <header id="site-header">
-    <h1>Skinner's Recipes</h1>
+    <h1 class="site-name">Skinner's Recipes</h1>
 </header>
 
 <nav id="main-nav">
@@ -25,22 +25,23 @@
 
 <main>
     <h2>Contact / Submit a Recipe</h2>
-    <p>Have a recipe idea or suggestion? Send it to Ian!</p>
 
-    <form id="recipe-form">
-        <label for="name">Your Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <div class="contact-section">
+        <p>Have a recipe idea or suggestion? Fill out the form below and send it to Ian!</p>
 
-        <label for="email">Your Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <form id="recipe-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="recipe">Recipe Idea:</label><br>
-        <textarea id="recipe" name="recipe" rows="5" required></textarea><br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <button type="submit">Submit</button>
-    </form>
+            <label for="recipe">Recipe Idea:</label>
+            <textarea id="recipe" name="recipe" rows="6" required></textarea>
 
-    <img src="images/placeholder_contact.jpg" alt="Contact Image" class="rounded shadow" width="300">
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </div>
 </main>
 
 <footer id="site-footer">

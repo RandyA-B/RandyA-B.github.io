@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Baking Recipes – Skinners' Recipes</title>
+    <title>Baking Recipes – Skinner's Recipes</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -10,7 +10,7 @@
 <body>
 
 <header id="site-header">
-    <h1>Skinners' Recipes</h1>
+    <h1 class="site-name">Skinner's Recipes</h1>
 </header>
 
 <nav id="main-nav">
@@ -25,29 +25,39 @@
 
 <main>
     <h2>Baking Recipes</h2>
-    <p>Sweet treats, baked goods, and no‑bake favorites.</p>
+    <p class="page-intro">Sweet treats, baked goods, and no-bake favorites from Ian's kitchen.</p>
 
-    <section>
-        <h3>Oven‑Required</h3>
-        <img src="images/placeholder_oven.jpg" alt="Baked Dish" class="rounded shadow" width="300">
-        <p>Classic baked recipes like cakes, breads, and pastries.</p>
-    </section>
+    <div class="recipe-grid">
 
-    <section>
-        <h3>Cold Recipes</h3>
-        <img src="images/placeholder_cold.jpg" alt="Cold Dessert" class="rounded shadow" width="300">
-        <p>No‑bake desserts and chilled treats.</p>
-    </section>
+        <section class="recipe-card">
+            <img src="images/placeholder_oven.jpg" alt="Baked Dish" class="rounded shadow">
+            <div class="recipe-card-body">
+                <h3>Oven-Required</h3>
+                <p>Classic baked recipes like cakes, breads, and pastries. These are the showstoppers worth every minute of prep.</p>
+            </div>
+        </section>
 
-    <section>
-        <h3>Miscellaneous</h3>
-        <img src="images/placeholder_bmisc.jpg" alt="Misc Baking" class="rounded shadow" width="300">
-        <p>Everything else from cookies to creative experiments.</p>
-    </section>
+        <section class="recipe-card">
+            <img src="images/placeholder_cold.jpg" alt="Cold Dessert" class="rounded shadow">
+            <div class="recipe-card-body">
+                <h3>Cold Recipes</h3>
+                <p>No-bake desserts and chilled treats. Great for warm days or when you want something sweet without turning on the oven.</p>
+            </div>
+        </section>
+
+        <section class="recipe-card">
+            <img src="images/placeholder_bmisc.jpg" alt="Misc Baking" class="rounded shadow">
+            <div class="recipe-card-body">
+                <h3>Miscellaneous</h3>
+                <p>Everything else — from cookies to creative experiments that don't fit neatly into a single category.</p>
+            </div>
+        </section>
+
+    </div>
 </main>
 
 <footer id="site-footer">
-    <p>&copy; 2026 Skinners' Recipes</p>
+    <p>&copy; 2026 Skinner's Recipes</p>
     <p>
         <a href="https://validator.w3.org/">HTML Validation</a> |
         <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a>
