@@ -1,6 +1,8 @@
 body {
     background-color: #c6d8ff;
     color: #6b5ca5;
+    font-family: "Blinker", sans-serif;
+
 }
 
 header {
@@ -21,6 +23,7 @@ main {
 
 h1, h2 {
     color: #6bffb8;
+    font-size: 30px;
 }
 
 footer {
@@ -32,18 +35,16 @@ footer {
 }
 
 a {
-    color: #59cd90;
+    color: #6bffb8;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 p {
     line-height: 1.6;
 }
 
-#page {
-    text-decoration: underline;
-}
 img {
     border-radius: 15px;
 }
@@ -52,3 +53,20 @@ img {
     color: #6b5ca5;
     font-size: 1.5em;
 }
+
+
+/* intro section */
+
+
+
+#intro-id {
+    color: #6b5ca5;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
