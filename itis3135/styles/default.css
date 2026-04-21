@@ -39,6 +39,12 @@ a {
     font-weight: bold;
 }
 
+p {
+    display: flex;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
 /* survey section */
 
 .survey-fieldset {
