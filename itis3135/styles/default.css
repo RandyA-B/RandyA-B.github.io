@@ -40,7 +40,6 @@ a {
 }
 
 p {
-    display: flex;
     line-height: 1.5;
     margin-bottom: 15px;
 }
