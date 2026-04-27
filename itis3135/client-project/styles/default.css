@@ -152,12 +152,14 @@ h3 {
    =========================== */
 
 .recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    overflow: hidden;
+    padding: 4px;
 }
 
 .recipe-card {
+    float: left;
+    width: 47%;
+    margin: 1.5%;
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
@@ -177,6 +179,39 @@ h3 {
 .recipe-card-body p {
     color: #555;
     font-size: 0.95em;
+}
+
+/* ===========================
+   Category Filter Bar
+   =========================== */
+
+.filter-bar {
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.filter-btn {
+    float: left;
+    padding: 8px 18px;
+    border: 2px solid #d4b59e;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #5a3e2b;
+    font-family: Georgia, serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-btn:hover {
+    background-color: #f2e3d5;
+}
+
+.filter-active {
+    background-color: #8a6b54;
+    border-color: #8a6b54;
+    color: #fff;
 }
 
 /* ===========================
@@ -234,13 +269,43 @@ h3 {
 #recipe-form input[type="text"],
 #recipe-form input[type="email"],
 #recipe-form textarea {
+    display: block;
     width: 100%;
     padding: 10px 12px;
+    border: 1px solid #ccc;
     border-radius: 6px;
     font-family: Georgia, serif;
     font-size: 0.95em;
     color: #333;
     background-color: #faf7f2;
+}
+
+#recipe-form input.input-error,
+#recipe-form textarea.input-error {
+    border: 2px solid #c0392b;
+    background-color: #fff5f5;
+}
+
+.field-error {
+    display: block;
+    color: #c0392b;
+    font-size: 0.85em;
+    margin-top: 4px;
+}
+
+#form-success {
+    margin-top: 20px;
+}
+
+.success-message {
+    background-color: #eaf7ea;
+    border: 1px solid #5cb85c;
+    color: #2e7d32;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 1em;
+    font-style: normal;
+    text-align: center;
 }
 
 #recipe-form textarea {

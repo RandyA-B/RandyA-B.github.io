@@ -9,27 +9,24 @@
 
 <body>
 
-<header id="site-header">
-    <h1 class="site-name">Skinner's Recipes</h1>
-</header>
+<header id="site-header"></header>
 
-<nav id="main-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cooking.html">Cooking Recipes</a></li>
-        <li><a href="baking.html" class="active">Baking Recipes</a></li>
-        <li><a href="about.html">About the Chef</a></li>
-        <li><a href="contact.html">Contact / Submit a Recipe</a></li>
-    </ul>
-</nav>
+<nav id="main-nav"></nav>
 
 <main>
     <h2>Baking Recipes</h2>
     <p class="page-intro">Sweet treats, baked goods, and no-bake favorites from Ian's kitchen.</p>
 
+    <div class="filter-bar">
+        <button class="filter-btn filter-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="oven">Oven-Required</button>
+        <button class="filter-btn" data-filter="cold">Cold Recipes</button>
+        <button class="filter-btn" data-filter="misc">Miscellaneous</button>
+    </div>
+
     <div class="recipe-grid">
 
-        <section class="recipe-card">
+        <section class="recipe-card" data-category="oven">
             <img src="images/placeholder_oven.jpg" alt="Baked Dish" class="rounded shadow">
             <div class="recipe-card-body">
                 <h3>Oven-Required</h3>
@@ -37,7 +34,7 @@
             </div>
         </section>
 
-        <section class="recipe-card">
+        <section class="recipe-card" data-category="cold">
             <img src="images/placeholder_cold.jpg" alt="Cold Dessert" class="rounded shadow">
             <div class="recipe-card-body">
                 <h3>Cold Recipes</h3>
@@ -45,7 +42,7 @@
             </div>
         </section>
 
-        <section class="recipe-card">
+        <section class="recipe-card" data-category="misc">
             <img src="images/placeholder_bmisc.jpg" alt="Misc Baking" class="rounded shadow">
             <div class="recipe-card-body">
                 <h3>Miscellaneous</h3>
@@ -56,13 +53,9 @@
     </div>
 </main>
 
-<footer id="site-footer">
-    <p>&copy; 2026 Skinner's Recipes</p>
-    <p>
-        <a href="https://validator.w3.org/">HTML Validation</a> |
-        <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a>
-    </p>
-</footer>
+<footer id="site-footer"></footer>
 
+
+<script defer src="script.js"></script>
 </body>
 </html>

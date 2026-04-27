@@ -9,35 +9,33 @@
 
 <body>
 
-<header id="site-header">
-    <h1>Skinner's Recipes</h1>
-</header>
+<header id="site-header"></header>
 
-<nav id="main-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cooking.html" class="active">Cooking Recipes</a></li>
-        <li><a href="baking.html">Baking Recipes</a></li>
-        <li><a href="about.html">About the Chef</a></li>
-        <li><a href="contact.html">Contact / Submit a Recipe</a></li>
-    </ul>
-</nav>
+<nav id="main-nav"></nav>
 
 <main>
     <h2>Cooking Recipes</h2>
     <p class="page-intro">Explore Ian's favorite cooking recipes, organized into simple categories.</p>
 
+    <div class="filter-bar">
+        <button class="filter-btn filter-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="meat">Meat</button>
+        <button class="filter-btn" data-filter="poultry">Poultry</button>
+        <button class="filter-btn" data-filter="soups">Soups &amp; Stews</button>
+        <button class="filter-btn" data-filter="misc">Miscellaneous</button>
+    </div>
+
     <div class="recipe-grid">
 
-        <section class="recipe-card">
-            <img src="images/placeholder_meat.webp" alt="Meat Dish" class="rounded shadow">
+        <section class="recipe-card" data-category="meat">
+            <img src="images/placeholder_meat.jpg" alt="Meat Dish" class="rounded shadow">
             <div class="recipe-card-body">
                 <h3>Meat</h3>
                 <p>Hearty and flavorful dishes featuring beef, pork, and more. From slow-cooked roasts to quick weeknight stir-fries.</p>
             </div>
         </section>
 
-        <section class="recipe-card">
+        <section class="recipe-card" data-category="poultry">
             <img src="images/placeholder_poulrty.jpg" alt="Poultry Dish" class="rounded shadow">
             <div class="recipe-card-body">
                 <h3>Poultry</h3>
@@ -45,7 +43,7 @@
             </div>
         </section>
 
-        <section class="recipe-card">
+        <section class="recipe-card" data-category="soups">
             <img src="images/placeholder_soup.jpg" alt="Soup Dish" class="rounded shadow">
             <div class="recipe-card-body">
                 <h3>Soups &amp; Stews</h3>
@@ -53,7 +51,7 @@
             </div>
         </section>
 
-        <section class="recipe-card">
+        <section class="recipe-card" data-category="misc">
             <img src="images/placeholder_misc.jpg" alt="Misc Dish" class="rounded shadow">
             <div class="recipe-card-body">
                 <h3>Miscellaneous</h3>
@@ -64,13 +62,9 @@
     </div>
 </main>
 
-<footer id="site-footer">
-    <p>&copy; 2026 Skinner's Recipes</p>
-    <p>
-        <a href="https://validator.w3.org/">HTML Validation</a> |
-        <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a>
-    </p>
-</footer>
+<footer id="site-footer"></footer>
 
+
+<script defer src="script.js"></script>
 </body>
 </html>
