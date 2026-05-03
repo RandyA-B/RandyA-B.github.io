@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randy Brown's Poised Panther | ITIS 3135 | Voting</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Datatype:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nova+Square&family=Offside&family=Roboto+Slab:wght@100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Voting System</h2>
+        <hr>
+        <p>A live poll powered by JavaScript Map and Set. Each voter ID can only vote once per option.</p>
+
+        <div class="voting-grid">
+            <div class="voting-card">
+                <h3>Add an Option</h3>
+                <div class="voting-form">
+                    <label for="new-option" class="sr-only">New option name</label>
+                    <input type="text" id="new-option" placeholder="Enter a new option...">
+                    <button id="add-option-btn">Add Option</button>
+                </div>
+                <p id="add-msg" class="voting-msg"></p>
+            </div>
+
+            <div class="voting-card">
+                <h3>Cast a Vote</h3>
+                <div class="voting-form">
+                    <label for="voter-id" class="sr-only">Voter ID</label>
+                    <input type="text" id="voter-id" placeholder="Your unique voter ID...">
+                    <label for="vote-select" class="sr-only">Select option to vote for</label>
+                    <select id="vote-select">
+                        <option value="">-- Select an option --</option>
+                    </select>
+                    <button id="vote-btn">Vote</button>
+                </div>
+                <p id="vote-msg" class="voting-msg"></p>
+            </div>
+        </div>
+
+        <div class="voting-results-panel">
+            <h3>Poll Results</h3>
+            <div id="results-display"></div>
+        </div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <script src="scripts/voting.js"></script>
+</body>
+</html>
