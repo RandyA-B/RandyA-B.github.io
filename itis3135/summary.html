@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randy Brown's Poised Panther | ITIS 3135 | Summary</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Datatype:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nova+Square&family=Offside&family=Roboto+Slab:wght@100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Final Project Summary</h2>
+        <hr>
+
+        <!-- Section 1: Meeting the Specifications -->
+        <section>
+            <h3>1. Meeting the Specifications</h3>
+
+            <h4>Interactive JavaScript Functionality</h4>
+            <p>This website implements three dynamic JavaScript features that allow users to interact with the DOM and load content dynamically:</p>
+            <ul>
+                <li>
+                    <strong>Card Gallery Lightbox (<a href="cards.html">cards.html</a>):</strong>
+                    Clicking any panther card opens a full-size image modal overlay. The user can close it by clicking the &times; button, clicking outside the image, or pressing Escape. The modal is built and injected into the DOM via JavaScript at runtime and includes ARIA attributes for accessibility.
+                </li>
+                <li>
+                    <strong>Movie Watchlist Filter (<a href="inventory.html">inventory.html</a>):</strong>
+                    JavaScript inserts filter buttons (All / Watched / Watching / To Watch) above the movie table. Clicking a button instantly shows or hides rows based on each row's watch-status class, letting the user browse only the entries relevant to them without a page reload.
+                </li>
+                <li>
+                    <strong>Survey Form Validation (<a href="survey.html">survey.html</a>):</strong>
+                    On form submission, JavaScript validates that all required fields are filled and that the email is properly formatted. Inline error messages appear next to any invalid fields. When all inputs are valid the form is replaced by a personalized confirmation message, giving the user clear, immediate feedback.
+                </li>
+            </ul>
+
+            <h4>CRAP Design Principles</h4>
+            <ul>
+                <li>
+                    <strong>Contrast:</strong> Dark text (#000 / #354f52) is used on light backgrounds (#ebebeb), and white text on dark green header/footer (#84a98c / #52796f). Link color (#2b59c3) stands out clearly against all backgrounds. Error messages use red (#c0392b) to contrast against the form background.
+                </li>
+                <li>
+                    <strong>Repetition:</strong> Every page shares the same header, navigation, and footer loaded from reusable component files. The same color palette, Offside font, border-radius values, and button styles repeat across all pages to create a unified visual identity.
+                </li>
+                <li>
+                    <strong>Alignment:</strong> Content is centered in a max-width container (70%) with consistent padding and margin. Tables, card grids, and form fields all align to the same horizontal rhythm. CSS Flexbox and Grid are used throughout to maintain structured, predictable layouts.
+                </li>
+                <li>
+                    <strong>Proximity:</strong> Related elements are grouped visually &mdash; form labels sit directly above their inputs, filter buttons appear immediately above the table they control, and the card modal caption appears directly beneath the enlarged image. Section headings introduce content blocks with clear spacing separation.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Section 2: Critique Feedback and Updates -->
+        <section>
+            <h3>2. Critique Feedback and Updates</h3>
+            <p>The following feedback was received during peer critiques, along with the actions taken in response:</p>
+            <ul>
+                <li>
+                    <strong>Navigation clarity:</strong> Reviewers noted the navigation bar had many links and could be overwhelming. In response, the nav was reorganized so the primary course pages appear first, with secondary links (hobby site, client site, CRAPpyWeb archive) placed in a separate secondary nav row, improving scannability.
+                </li>
+                <li>
+                    <strong>Footer school links:</strong> Feedback indicated the footer contained links to GitHub and freeCodeCamp, which are considered school/project links and do not belong in a professional site footer. These were removed; the footer now shows only the designer credit (Randy Brown Designs), a LinkedIn link, and the three validation buttons.
+                </li>
+                <li>
+                    <strong>Pages lacking interactivity:</strong> Reviewers pointed out that several content pages (cards, inventory, survey) had no JavaScript interaction. Three new JS implementations were added to address this directly: a card lightbox, an inventory filter, and survey form validation.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Section 3: Stakeholder Needs and Future Plans -->
+        <section>
+            <h3>3. Stakeholder Needs and Future Plans</h3>
+            <p>
+                The Poised Panther website is designed to serve as a personal portfolio and demonstration platform for prospective clients and employers in the web development and design space. The primary stakeholders &mdash; potential clients and hiring managers &mdash; need to see that I can build organized, professional, interactive web experiences. The site meets those needs by showcasing a range of skills: semantic HTML structure, responsive CSS layout using Flexbox and Grid, JavaScript DOM manipulation, accessible design (ARIA attributes, WCAG compliance), and separation of concerns with modular CSS and JS files linked to HTML.
+            </p>
+            <p>
+                The client project (Skinner&rsquo;s Recipes) demonstrates my ability to build for a real stakeholder with its own brand identity, content, and functionality separate from my course work. The hobby site (Pickup Soccer) shows range and personality, which rounds out the portfolio.
+            </p>
+            <p>
+                Future plans for the site include: migrating to a proper front-end framework (React, already started via the React App link), adding a contact form on the portfolio that actually sends email, expanding the client project with a searchable recipe database, and improving mobile responsiveness across all pages. I also plan to continue growing the card gallery with original artwork as the Poised Panther brand develops.
+            </p>
+        </section>
+
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+</body>
+</html>

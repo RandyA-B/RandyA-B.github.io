@@ -878,3 +878,140 @@ code {
     .weather-stat:nth-child(1),
     .weather-stat:nth-child(2) { border-bottom: 1px solid #d8e6d8; }
 }
+
+/* card lightbox modal */
+
+#card-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+}
+
+.modal-backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-box {
+    position: relative;
+    background-color: #ebebeb;
+    border-radius: 14px;
+    padding: 20px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #354f52;
+    line-height: 1;
+}
+
+.modal-close:hover { color: #c0392b; }
+
+#modal-img {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#modal-caption {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #354f52;
+    margin: 0;
+}
+
+/* inventory filter buttons */
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 auto 16px;
+    max-width: 960px;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border: 2px solid #84a98c;
+    border-radius: 20px;
+    background-color: #fff;
+    font-family: "Offside", sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.filter-btn:hover { background-color: #d8e6d8; }
+
+.filter-btn.active {
+    background-color: #52796f;
+    color: #fff;
+    border-color: #52796f;
+}
+
+/* survey form validation errors + confirmation */
+
+.field-error {
+    display: block;
+    color: #c0392b;
+    font-size: 0.85em;
+    margin-top: 3px;
+}
+
+.survey-confirmation {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.survey-confirmation h3 {
+    color: #354f52;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* footer validation buttons */
+
+.validation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.val-btn {
+    padding: 6px 14px;
+    border: 2px solid #52796f;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #354f52;
+    font-family: "Offside", sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.val-btn:hover {
+    background-color: #52796f;
+    color: #fff;
+}

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\randy\\\\OneDrive\\\\Documents\\\\UNCC\\\\ITIS-3135\\\\RandyA-B.github.io\\\\itis3135\\\\\" -Recurse -Force | Select-Object -Property FullName, PSIsContainer | Sort-Object FullName)"
+    ]
+  }
+}
